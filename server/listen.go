@@ -14,5 +14,6 @@ func main() {
 		fmt.Printf("-- End-Of-Request --\n\n")
 	})
 
-	fmt.Printf(http.ListenAndServe(":9900", nil).Error())
+	fmt.Printf("Listening on localhost:9900...\n")
+	http.ListenAndServe("localhost:9900", nil)
 }
