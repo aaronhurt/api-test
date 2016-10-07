@@ -1,4 +1,4 @@
-package: github.com/myENA/test
+package: github.com/leprechau/api-test
 import:
 - package: github.com/hashicorp/consul
   version: v0.7.0
