@@ -11,7 +11,7 @@ func main() {
 		for k, v := range r.Header {
 			fmt.Printf("Request Header: %s => %s\n", k, v)
 		}
-		fmt.Printf("-- End-Of-Request --\n\n")
+		fmt.Printf("-- End-Of-Request --\n")
 	})
 
 	fmt.Printf("Listening on localhost:9900...\n")
