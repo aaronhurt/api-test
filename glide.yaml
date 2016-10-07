@@ -1,0 +1,6 @@
+package: github.com/myENA/test
+import:
+- package: github.com/hashicorp/consul
+  version: v0.7.0
+  subpackages:
+  - api

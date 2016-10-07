@@ -1,0 +1,14 @@
+hash: a6d2aa7ac87a03da63ac9b2ab78dce16293588a6721a580224dcc37766608257
+updated: 2016-10-07T18:03:07.123014483-05:00
+imports:
+- name: github.com/hashicorp/consul
+  version: a189091a3530051285c12c726ca28ea55e015336
+  subpackages:
+  - api
+- name: github.com/hashicorp/go-cleanhttp
+  version: 875fb671b3ddc66f8e2f0acc33829c8cb989a38d
+- name: github.com/hashicorp/serf
+  version: e4ec8cc423bbe20d26584b96efbeb9102e16d05f
+  subpackages:
+  - coordinate
+testImports: []
