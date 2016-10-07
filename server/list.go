@@ -7,7 +7,7 @@ import (
 
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Printf("-- New Request --\n\nRequest URL: %s\n", r.URL.String())
+		fmt.Printf("-- New Request --\nRequest URL: %s\n", r.URL.String())
 		for k, v := range r.Header {
 			fmt.Printf("Request Header: %s => %s\n", k, v)
 		}
