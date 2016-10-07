@@ -22,19 +22,7 @@ func optTest() api.KVPairs {
 	return kvps
 }
 
-func bothTest() api.KVPairs {
-	config := api.DefaultConfig()
-	config.Token = "testToken"
-	client, _ := api.NewClient(config)
-	opts := &api.QueryOptions{
-		Token: "testToken",
-	}
-	kvps, _, _ := client.KV().List("/", opts)
-	return kvps
-}
-
 func main() {
 	fmt.Printf("Client Config Test: %+v\n", cTest())
 	fmt.Printf("Client QueryOptions Test: %+v\n", optTest())
-	fmt.Printf("Client Config and QueryOptions Test: %+v\n", bothTest())
 }
